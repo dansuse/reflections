@@ -1,0 +1,43 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    because the old version is already working, so if we maybe make mistake in the new version, we can compare it with the old version to find the error.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+	-if we forget about how to implement something, we can go back to version where it is first implemented and worked, so that it is not cluttered by other code that doesn't have to do with what we are focusing on
+	-we can go back to specific version if something went wrong
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+Manually
+-Cons: Kadang kita lupa untuk commit karena keasikan koding.
+-Pros: Kita dapat commit setiap logical unit yang kita sudah selesaikan. Sehingga commitnya tidak kotor.
+
+Automatically
+-Cons: Commit kita bakalan kotor.
+-Pros: Kita tidak perlu takut lupa commit.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+Karena dalam coding ada file dimana jika kita rubah, maka dapat mempengaruhi file lainnya, seperti html dan css
+Sedangkan word, jarang sekali jika suatu dokumen dirubah, maka akan mempengaruhi dokumen lainnya.
+
+How can you use the commands git log and git diff to view the history of files?
+
+git log untuk melihat semua commit,
+git diff untuk membandingkan antara sebuah commit dengan commit lainnya. Dengan sintak git diff <oldcommit> <newcommit>
+
+How might using version control make you more confident to make changes that
+could break something?
+
+-karena kalau terjadi error kita bisa undo ke versi sebelumnya
+-dan juga jika terjadi accidental error, kita bisa memakai git diff untuk mencari error tersebut dengan jauh lebih mudah
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Untuk semua project, sehingga saya bisa menjadi orang yang risk taker dalam koding
