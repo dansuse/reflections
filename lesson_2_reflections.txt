@@ -1,0 +1,24 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+-akan terbuat file metadata di dalam folder .git, yang berisi history commit kita.
+-karena kalau tidak diinisiasi, maka perubahan yang kita lakukan (commit) tidak akan di track. Bahkan kita tidak bisa commit karena foldernya bukan git repository.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+-staging area itu adalah tempat perantara yang menampung apa yang ingin kita masukkan kedalam commit pada repository.
+-Dengan staging area, kita dapat memilih file apa saja yang ingin kita masukkan ke dalam commit(sehingga benar-benar memakai konsep one logical unit)
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
