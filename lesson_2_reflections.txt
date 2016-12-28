@@ -12,13 +12,45 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+-dengan staging area kita dapat memilih file apa saja yang ingin kita commit, sehingga lebih memudahkan kita untuk mengetahui file apa saja yang terkait sebuah logical change unit tertentu.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+-yang dilakukan branch adalah memberi nama label pada commit.
+Branch menunjuk pada suatu commit.
+Sehingga ketika kita melakukan commit lagi, maka branch otomatis akan pindah ke commit terakhir.
+Branch yang pindah atau terpengaruh saat melakukan commit adalah branch yang sedang di checkout.
+*Hal ini berguna ketika kita ingin melakukan sebuah percobaan yang kita tidak yakin akan berhasil.
+*Selain itu juga kita ingin membuat easy mode dari game (bukan official update)
+*Atau jika kita ingin merubah bahasa sebuah aplikasi, namun belum yakin bagaimana caranya
+Ketiga bintang diatas dapat dilakukan dengan kita masih memiliki working project ketika kita ingin menunjukkan ke orang lain akan apa yang kita kerjakan.
+
 How do the diagrams help you visualize the branch structure?
+
+-dengan diagram kita bisa mengetahui apakah ketika kita melakukan commit, commit terbaru akan reachable dari branch-branch yang ada. (bisa juga diketahui melalui error message "detached HEAD")
+-Kita bisa mengetahui struktur branch kita secara keseluruhan
+-keep track which branches contain which commits
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+
+
+yang dilakukan git diff adalah
+membandingkan <staging area> dengan <working directory>
+<staging area> dinotasikan -
+<working directory> dinotasikan +
+
+kalau git diff --staged yang dilakukan adalah
+membandingkan <staging area> dengan <last commit>
+yang di <staging area> itu dinotasikan +
+yang di <last commit> itu dinotasikan -
+
+git reset --hard
+discard any changes in either the working directory or the staging area
+
+http://udacity.github.io/git-styleguide/
